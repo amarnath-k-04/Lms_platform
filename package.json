@@ -1,5 +1,6 @@
 {
   "name": "client",
+  "homepage": "https://amarnath-k-04.github.io/lms_platform",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,10 +8,13 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d dist"
   },
   "dependencies": {
     "@clerk/clerk-react": "^5.59.0",
+    "gh-pages": "^6.3.0",
     "humanize-duration": "^3.33.2",
     "quill": "^2.0.3",
     "rc-progress": "^4.0.0",
